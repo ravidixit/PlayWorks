@@ -23,13 +23,9 @@
 #import "ClientHandler.h"
 #include <iostream>
 
-
-@interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
-@end
-
 @implementation AppDelegate
+
+@synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -40,7 +36,7 @@
     CefRefPtr<CefClient> client(new ClientHandler());
     
     CefWindowInfo info;
-    info.SetAsChild([_window contentView], 0, 0, [[_window contentView] frame].size.width, [[_window contentView] frame].size.height);
+    info.SetAsChild([window contentView], 0, 0, [[window contentView] frame].size.width, [[window contentView] frame].size.height);
     
     CefInitialize(appSettings, cefApplication);
     
