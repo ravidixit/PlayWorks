@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C544E0751AE0EA9C0079EF20 /* libcef_dll_wrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C544E0731AE0EA9C0079EF20 /* libcef_dll_wrapper.a */; };
+		C544E0761AE0EA9C0079EF20 /* libcef.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C544E0741AE0EA9C0079EF20 /* libcef.dylib */; };
+		C544E0781AE0EC110079EF20 /* libcef.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544E0741AE0EA9C0079EF20 /* libcef.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		C5F115A51ADFFAB1005E00B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F115A41ADFFAB1005E00B2 /* AppDelegate.m */; };
+		C5F115A71ADFFAB1005E00B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F115A61ADFFAB1005E00B2 /* main.m */; };
+		C5F115A91ADFFAB1005E00B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5F115A81ADFFAB1005E00B2 /* Images.xcassets */; };
+		C5F115AC1ADFFAB1005E00B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5F115AA1ADFFAB1005E00B2 /* MainMenu.xib */; };
+		C5F115B81ADFFAB1005E00B2 /* CEFBrowserTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F115B71ADFFAB1005E00B2 /* CEFBrowserTaskTests.m */; };
+		C5F116DF1AE00132005E00B2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F116DE1AE00132005E00B2 /* AppKit.framework */; };
+		C5F116E11AE00140005E00B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F116E01AE00140005E00B2 /* Foundation.framework */; };
+		C5F116E81AE002CB005E00B2 /* ClientHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5F116E61AE002CB005E00B2 /* ClientHandler.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5F115B21ADFFAB1005E00B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5F115961ADFFAB1005E00B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5F1159D1ADFFAB1005E00B2;
+			remoteInfo = CEFBrowserTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C544E0771AE0EC0A0079EF20 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				C544E0781AE0EC110079EF20 /* libcef.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C544E0731AE0EA9C0079EF20 /* libcef_dll_wrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcef_dll_wrapper.a; path = CEFBrowserTask/CEFSupport_Libs/Mac/lib/libcef_dll_wrapper.a; sourceTree = "<group>"; };
+		C544E0741AE0EA9C0079EF20 /* libcef.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcef.dylib; path = CEFBrowserTask/CEFSupport_Libs/Mac/lib/libcef.dylib; sourceTree = "<group>"; };
+		C5F1159E1ADFFAB1005E00B2 /* CEFBrowserTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CEFBrowserTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F115A21ADFFAB1005E00B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F115A31ADFFAB1005E00B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5F115A41ADFFAB1005E00B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5F115A61ADFFAB1005E00B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5F115A81ADFFAB1005E00B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C5F115AB1ADFFAB1005E00B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C5F115B11ADFFAB1005E00B2 /* CEFBrowserTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEFBrowserTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F115B61ADFFAB1005E00B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5F115B71ADFFAB1005E00B2 /* CEFBrowserTaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEFBrowserTaskTests.m; sourceTree = "<group>"; };
+		C5F116DE1AE00132005E00B2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C5F116E01AE00140005E00B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5F116E61AE002CB005E00B2 /* ClientHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClientHandler.cpp; sourceTree = "<group>"; };
+		C5F116E71AE002CB005E00B2 /* ClientHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientHandler.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5F1159B1ADFFAB1005E00B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544E0751AE0EA9C0079EF20 /* libcef_dll_wrapper.a in Frameworks */,
+				C544E0761AE0EA9C0079EF20 /* libcef.dylib in Frameworks */,
+				C5F116E11AE00140005E00B2 /* Foundation.framework in Frameworks */,
+				C5F116DF1AE00132005E00B2 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F115AE1ADFFAB1005E00B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5F115951ADFFAB1005E00B2 = {
+			isa = PBXGroup;
+			children = (
+				C544E0731AE0EA9C0079EF20 /* libcef_dll_wrapper.a */,
+				C544E0741AE0EA9C0079EF20 /* libcef.dylib */,
+				C5F116E51AE002CB005E00B2 /* ClientHandlerLibs */,
+				C5F116E01AE00140005E00B2 /* Foundation.framework */,
+				C5F116DE1AE00132005E00B2 /* AppKit.framework */,
+				C5F115C11ADFFBD2005E00B2 /* CEFSupport_Libs */,
+				C5F115A01ADFFAB1005E00B2 /* CEFBrowserTask */,
+				C5F115B41ADFFAB1005E00B2 /* CEFBrowserTaskTests */,
+				C5F1159F1ADFFAB1005E00B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5F1159F1ADFFAB1005E00B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5F1159E1ADFFAB1005E00B2 /* CEFBrowserTask.app */,
+				C5F115B11ADFFAB1005E00B2 /* CEFBrowserTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5F115A01ADFFAB1005E00B2 /* CEFBrowserTask */ = {
+			isa = PBXGroup;
+			children = (
+				C5F115A31ADFFAB1005E00B2 /* AppDelegate.h */,
+				C5F115A41ADFFAB1005E00B2 /* AppDelegate.m */,
+				C5F115A81ADFFAB1005E00B2 /* Images.xcassets */,
+				C5F115AA1ADFFAB1005E00B2 /* MainMenu.xib */,
+				C5F115A11ADFFAB1005E00B2 /* Supporting Files */,
+			);
+			path = CEFBrowserTask;
+			sourceTree = "<group>";
+		};
+		C5F115A11ADFFAB1005E00B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5F115A21ADFFAB1005E00B2 /* Info.plist */,
+				C5F115A61ADFFAB1005E00B2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5F115B41ADFFAB1005E00B2 /* CEFBrowserTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5F115B71ADFFAB1005E00B2 /* CEFBrowserTaskTests.m */,
+				C5F115B51ADFFAB1005E00B2 /* Supporting Files */,
+			);
+			path = CEFBrowserTaskTests;
+			sourceTree = "<group>";
+		};
+		C5F115B51ADFFAB1005E00B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5F115B61ADFFAB1005E00B2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5F115C11ADFFBD2005E00B2 /* CEFSupport_Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CEFSupport_Libs;
+			path = CEFBrowserTask/CEFSupport_Libs;
+			sourceTree = "<group>";
+		};
+		C5F116E51AE002CB005E00B2 /* ClientHandlerLibs */ = {
+			isa = PBXGroup;
+			children = (
+				C5F116E61AE002CB005E00B2 /* ClientHandler.cpp */,
+				C5F116E71AE002CB005E00B2 /* ClientHandler.h */,
+			);
+			name = ClientHandlerLibs;
+			path = CEFBrowserTask/ClientHandlerLibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5F1159D1ADFFAB1005E00B2 /* CEFBrowserTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F115BB1ADFFAB1005E00B2 /* Build configuration list for PBXNativeTarget "CEFBrowserTask" */;
+			buildPhases = (
+				C5F1159A1ADFFAB1005E00B2 /* Sources */,
+				C5F1159B1ADFFAB1005E00B2 /* Frameworks */,
+				C5F1159C1ADFFAB1005E00B2 /* Resources */,
+				C544E0771AE0EC0A0079EF20 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CEFBrowserTask;
+			productName = CEFBrowserTask;
+			productReference = C5F1159E1ADFFAB1005E00B2 /* CEFBrowserTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5F115B01ADFFAB1005E00B2 /* CEFBrowserTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5F115BE1ADFFAB1005E00B2 /* Build configuration list for PBXNativeTarget "CEFBrowserTaskTests" */;
+			buildPhases = (
+				C5F115AD1ADFFAB1005E00B2 /* Sources */,
+				C5F115AE1ADFFAB1005E00B2 /* Frameworks */,
+				C5F115AF1ADFFAB1005E00B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5F115B31ADFFAB1005E00B2 /* PBXTargetDependency */,
+			);
+			name = CEFBrowserTaskTests;
+			productName = CEFBrowserTaskTests;
+			productReference = C5F115B11ADFFAB1005E00B2 /* CEFBrowserTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5F115961ADFFAB1005E00B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Radix;
+				TargetAttributes = {
+					C5F1159D1ADFFAB1005E00B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C5F115B01ADFFAB1005E00B2 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C5F1159D1ADFFAB1005E00B2;
+					};
+				};
+			};
+			buildConfigurationList = C5F115991ADFFAB1005E00B2 /* Build configuration list for PBXProject "CEFBrowserTask" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				am,
+				ar,
+				bg,
+				bn,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en_GB,
+				es,
+				es_419,
+				et,
+				fa,
+				fi,
+				fil,
+				fr,
+				gu,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				kn,
+				ko,
+				lt,
+				lv,
+				ml,
+				mr,
+				ms,
+				nb,
+				nl,
+				pl,
+				pt_BR,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sl,
+				sr,
+				sv,
+				sw,
+				ta,
+				te,
+				th,
+				tr,
+				uk,
+				vi,
+				zh_CN,
+				zh_TW,
+			);
+			mainGroup = C5F115951ADFFAB1005E00B2;
+			productRefGroup = C5F1159F1ADFFAB1005E00B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5F1159D1ADFFAB1005E00B2 /* CEFBrowserTask */,
+				C5F115B01ADFFAB1005E00B2 /* CEFBrowserTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5F1159C1ADFFAB1005E00B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F115A91ADFFAB1005E00B2 /* Images.xcassets in Resources */,
+				C5F115AC1ADFFAB1005E00B2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F115AF1ADFFAB1005E00B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5F1159A1ADFFAB1005E00B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F115A71ADFFAB1005E00B2 /* main.m in Sources */,
+				C5F115A51ADFFAB1005E00B2 /* AppDelegate.m in Sources */,
+				C5F116E81AE002CB005E00B2 /* ClientHandler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F115AD1ADFFAB1005E00B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5F115B81ADFFAB1005E00B2 /* CEFBrowserTaskTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5F115B31ADFFAB1005E00B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5F1159D1ADFFAB1005E00B2 /* CEFBrowserTask */;
+			targetProxy = C5F115B21ADFFAB1005E00B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5F115AA1ADFFAB1005E00B2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5F115AB1ADFFAB1005E00B2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5F115B91ADFFAB1005E00B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5F115BA1ADFFAB1005E00B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C5F115BC1ADFFAB1005E00B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CEFBrowserTask/CEFSupport_Libs/Mac";
+				INFOPLIST_FILE = CEFBrowserTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/CEFBrowserTask/CEFSupport_Libs/Mac/lib",
+					"$(PROJECT_DIR)/CEFBrowserTask/CEFSupport_Libs/Mac/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5F115BD1ADFFAB1005E00B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/CEFBrowserTask/CEFSupport_Libs/Mac";
+				INFOPLIST_FILE = CEFBrowserTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/CEFBrowserTask/CEFSupport_Libs/Mac/lib",
+					"$(PROJECT_DIR)/CEFBrowserTask/CEFSupport_Libs/Mac/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5F115BF1ADFFAB1005E00B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CEFBrowserTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CEFBrowserTask.app/Contents/MacOS/CEFBrowserTask";
+			};
+			name = Debug;
+		};
+		C5F115C01ADFFAB1005E00B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CEFBrowserTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CEFBrowserTask.app/Contents/MacOS/CEFBrowserTask";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5F115991ADFFAB1005E00B2 /* Build configuration list for PBXProject "CEFBrowserTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F115B91ADFFAB1005E00B2 /* Debug */,
+				C5F115BA1ADFFAB1005E00B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F115BB1ADFFAB1005E00B2 /* Build configuration list for PBXNativeTarget "CEFBrowserTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F115BC1ADFFAB1005E00B2 /* Debug */,
+				C5F115BD1ADFFAB1005E00B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F115BE1ADFFAB1005E00B2 /* Build configuration list for PBXNativeTarget "CEFBrowserTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F115BF1ADFFAB1005E00B2 /* Debug */,
+				C5F115C01ADFFAB1005E00B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5F115961ADFFAB1005E00B2 /* Project object */;
+}
